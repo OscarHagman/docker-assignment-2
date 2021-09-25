@@ -1,0 +1,9 @@
+FROM nginx:mainline-alpine
+
+WORKDIR /usr/share/nginx/html
+COPY index.html index.html
+COPY nginx.conf .
+
+CMD [ "nginx", "-c", "nginx.conf" ]
+CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
+
