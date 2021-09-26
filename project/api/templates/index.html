@@ -1,0 +1,21 @@
+Hello and welcome to Oscars tiny-API for Docker demonstration purposes.
+<br>
+<br>
+To register an account: "/register"
+- Expected POST request: {
+    "username": <username>,
+    "password": <password>
+} (You will get 6 tokens when registering)
+<br>
+To store a sentence: "/store"
+- Expected POST request: {
+    "username": <username>,
+    "password": <password>,
+    "sentence": <sentence>
+} (Costs 1 token)
+<br>
+To retrieve stored sentence: "/get"
+- Expected POST request: {
+    "username": <username>,
+    "password": <password>
+} (Costs 1 token)
