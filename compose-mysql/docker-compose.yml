@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  db:
+    container_name: mysql
+    image: mysql:latest
+    
+    volumes:
+      - mydata:/var/lib/mysql
+    
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: iamtheuser
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_PASSWORD: mypassword
+volumes:
+  mydata:
+
